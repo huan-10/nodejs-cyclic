@@ -1,0 +1,29 @@
+<div class="mt-4 container">
+    <h3>Đăng video</h3>
+
+    <form method="post" action="/courses/store">
+        <div class="form-group mt-4">
+            <label for="name">Tên video</label>
+            <input type="text" class="form-control" id="name" name="name"
+                required>
+        </div>
+        <div class="form-group">
+            <label for="description">Mô tả</label>
+            <input type="text" class="form-control" id="description"
+                name="description" required>
+        </div>
+        <div class="form-group">
+            <label for="videoId">Video Id ( https://www.youtube.com/watch?v=<a
+                    style="color: blueviolet;">QOLQ0ks5b_U</a> )</label>
+            <input type="text" class="form-control" id="videoId" name="videoId"
+                placeholder="QOLQ0ks5b_U" required>
+        </div>
+        <div class="form-group">
+            <label for="level">Tên ca sĩ</label>
+            <input type="text" class="form-control" id="level" name="level"
+                required>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Thêm video</button>
+    </form>
+</div>

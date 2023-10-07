@@ -1,0 +1,48 @@
+@charset "UTF-8";
+.namePage {
+  font-family: sans-serif;
+}
+
+.card-course-item {
+  margin-top: 16px;
+}
+
+.user-avatar {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  margin-right: 4px;
+}
+
+/* CSS tùy chỉnh cho hình ảnh cùng một kích thước */
+
+/*# sourceMappingURL=app.css.map */
+.image-container {
+  position: relative;
+  transition: filter 0.3s ease-in-out;
+}
+
+.btn-xem-them {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  background-color: #fff;
+  color: #333;
+  border-radius:20px ;
+  border: none;
+}
+
+.image-container:hover .btn-xem-them {
+  opacity: 1;
+}
+
+.image-container:hover img {
+  filter: brightness(50%);
+}
+
+
+
+

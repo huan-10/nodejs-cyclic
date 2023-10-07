@@ -1,0 +1,39 @@
+
+<div class="container mt-5"
+    style="margin-bottom: 150px ; ">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header">
+                    Đăng nhập
+                </div>
+                <div class="card-body">
+                    <form method="post" action="/createAccount/loginUser">
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" class="form-control"
+                                id="email" name="email"
+                                placeholder="Nhập email của bạn" required>
+                            <p style="color: red;">Email không đúng</p>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="password">Mật khẩu:</label>
+                            <input type="password" class="form-control"
+                                id="password" name="password"
+                                placeholder="Nhập mật khẩu" required>
+                        </div>
+
+                        <div class="d-flex justify-content-between">
+                            <button type="submit" class="btn btn-primary">Đăng
+                                nhập</button> <!-- Thẻ button bên trái -->
+                            <a href="/createAccount/register"
+                                class="btn btn-secondary">Đăng kí</a>
+                            <!-- Thẻ a bên phải -->
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

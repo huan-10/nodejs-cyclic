@@ -1,0 +1,90 @@
+
+<div class="row m-2">
+    {{!-- <div class="col-sm-0 col-md-0 col-lg-1 d-none d-lg-block">
+        <!-- Nội dung cột chiếm 10% -->
+        <div class="mt-3">
+            <a href="/">
+                <img
+                    style="width:50px; height:50px"
+                    src="https://media-cdn-v2.laodong.vn/Storage/NewsPortal/2019/11/2/763613/Lisa-Blacpink9.jpg"
+                    alt="Avatar"
+                    class="rounded-circle">
+            </a>
+
+        </div>
+        <div class="mt-4">
+            <a href="/">
+                <img
+                    style="width:50px; height:50px"
+                    src="https://assets.teenvogue.com/photos/6154af7663ab243c2cd2c31f/1:1/w_3279,h_3279,c_limit/GettyImages-1343576724.jpg"
+                    alt="Avatar"
+                    class="rounded-circle">
+            </a>
+
+        </div>
+        <div class="mt-4">
+            <a href="/">
+                <img
+                    style="width:50px; height:50px"
+                    src="https://symbols.vn/wp-content/uploads/2022/02/Hinh-Rose-Blackpink-ngau-cute.jpeg"
+                    alt="Avatar"
+                    class="rounded-circle">
+            </a>
+
+        </div>
+        <div class="mt-4">
+            <a href="/">
+                <img
+                    style="width:50px; height:50px"
+                    src="https://cdn.tuoitre.vn/thumb_w/640/471584752817336320/2023/2/8/jennie-1664529951896406065518-1675850656917967930881.jpg"
+                    alt="Avatar"
+                    class="rounded-circle">
+            </a>
+
+        </div>
+
+    </div> --}}
+    <div class="col-md-12 ">
+        <!-- Nội dung cột chiếm 90% -->
+
+        <div class="row">
+            {{#each courses}}
+            <div class="col-sm-6 col-lg-3">
+                <div class="card card-course-item"
+                    style="border: 10px; max-height: 450px; overflow-y: auto;">
+                    <a href="courses/{{this.slug}}">
+                        <div
+                            class="image-container d-flex justify-content-center align-items-center position-relative">
+                            <img src="{{this.image}}"
+                                class="card-img-top custom-image-size"
+                                alt="{{this.name}}"
+                                style="border-radius: 10px;">
+                            <a href="courses/{{this.slug}}"
+                                class="btn btn-xem-them">Xem video</a>
+                        </div>
+                    </a>
+                    <div class="card-body">
+                        <a href="courses/{{this.slug}}">
+                            <h5 class="card-title">{{this.name}}</h5>
+                            <h5 class="card-title">{{this.username}}</h5>
+
+                        </a>
+                        <p class="card-text">{{this.description}}</p>
+                    </div>
+                </div>
+            </div>
+
+            {{else}}
+
+            <div
+                class="col-12 d-flex flex-column align-items-center justify-content-center"
+                style="height: 70vh;">
+                <h1 class="mb-3">Bạn chưa đăng video nào</h1>
+                <a href="/courses/create">Đăng video</a>
+            </div>
+
+            {{/each}}
+        </div>
+
+    </div>
+</div>
