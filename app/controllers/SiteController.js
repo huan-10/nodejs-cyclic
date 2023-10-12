@@ -26,7 +26,7 @@ const index = (req, res, next) => {
 const search = (req, res) => {
   const username = req.myUsername;
 
-  res.send(`chao em nha ${username}`);
+  res.send("chào em nha");
 };
 
 module.exports = {
