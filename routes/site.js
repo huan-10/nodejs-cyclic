@@ -10,6 +10,6 @@ router.get(
   middleware.getUserName,
   siteController.search
 );
-router.get("/", siteController.index);
+router.get("/", middleware.getUserName, siteController.index);
 
 module.exports = router;
